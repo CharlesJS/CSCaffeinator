@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 50;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		28E6A5402616DEC900ABDA4C /* CSErrors in Frameworks */ = {isa = PBXBuildFile; productRef = 28E6A53F2616DEC900ABDA4C /* CSErrors */; };
 		28E6A5482616E14F00ABDA4C /* CSCaffeinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28E6A5472616E14F00ABDA4C /* CSCaffeinator.swift */; };
 /* End PBXBuildFile section */
 
@@ -23,7 +22,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				28E6A5402616DEC900ABDA4C /* CSErrors in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -91,7 +89,6 @@
 			);
 			name = CSCaffeinator;
 			packageProductDependencies = (
-				28E6A53F2616DEC900ABDA4C /* CSErrors */,
 			);
 			productName = CSCaffeinator;
 			productReference = 28E6A5272616B77C00ABDA4C /* libCSCaffeinator.a */;
@@ -121,7 +118,6 @@
 			);
 			mainGroup = 28E6A51E2616B77C00ABDA4C;
 			packageReferences = (
-				28E6A53E2616DEC900ABDA4C /* XCRemoteSwiftPackageReference "CSErrors" */,
 			);
 			productRefGroup = 28E6A5282616B77C00ABDA4C /* Products */;
 			projectDirPath = "";
@@ -314,25 +310,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		28E6A53E2616DEC900ABDA4C /* XCRemoteSwiftPackageReference "CSErrors" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/CharlesJS/CSErrors.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 0.3.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		28E6A53F2616DEC900ABDA4C /* CSErrors */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 28E6A53E2616DEC900ABDA4C /* XCRemoteSwiftPackageReference "CSErrors" */;
-			productName = CSErrors;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 28E6A51F2616B77C00ABDA4C /* Project object */;
 }

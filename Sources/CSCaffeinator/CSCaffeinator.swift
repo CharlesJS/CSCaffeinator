@@ -8,7 +8,6 @@
 import Foundation
 import IOKit
 import IOKit.pwr_mgt
-import CSErrors
 
 public class CSCaffeinator {
     public enum AssertionType {
@@ -79,7 +78,7 @@ public class CSCaffeinator {
         )
         
         if err != kIOReturnSuccess {
-            throw ioKitError(err)
+            throw NSError(domain: NSMachErrorDomain, code: Int(err), userInfo: nil)
         }
         
         self.id = id
@@ -98,7 +97,7 @@ public class CSCaffeinator {
             if err == kIOReturnSuccess {
                 self.stopped = true
             } else {
-                throw ioKitError(err)
+                throw NSError(domain: NSMachErrorDomain, code: Int(err), userInfo: nil)
             }
         }
     }

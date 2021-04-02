@@ -13,15 +13,11 @@ let package = Package(
             targets: ["CSCaffeinator"]
         )
     ],
-    dependencies: [
-        .package(url: "https://github.com/CharlesJS/CSErrors", from: "0.3.0")
-    ],
+    dependencies: [],
     targets: [
         .target(
             name: "CSCaffeinator",
-            dependencies: [
-                "CSErrors"
-            ]
+            dependencies: []
         )
     ]
 )
